@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care4Cats</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="end-page">
+        <header>
+            <div class="content">
+                <div class="logo">
+                    <img src="images/logo.png" />
+                    <h4>Care4Cats</h4>
+                </div>
+                <div class="userinfo">
+                    <button class="login-btn">LOGIN</button>
+                    <div class="login-info">
+                        <span>shuaipapa</span>
+                        <button class="logout-btn">LOGOUT</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="end">
+                <img src="" />
+                <p class="end-text">end text</p>
+            </div>
+            <button class="back-btn">Back to Home Page</button>
+        </main>
+
+        <div class="login-dialog">
+            <div class="dialog-content">
+                <h2>Login Care4Cats</h2>
+                <input placeholder="press your nickname" />
+                <div class="controls">
+                    <button class="cancel-btn">Cancel</button>
+                    <button class="submit-btn">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        window.onload = function () {
+            const score = +(localStorage.getItem('score') || 0);
+            let endText = '';
+            let img = '';
+            if (score <= 3) {
+                img = './images/cat-1.png';
+                endText = 'You did not pass the test. Please learn more information about how to raise a cat.<br><a href="https://www.hillspet.com/cat-care/new-pet-parent/being-the-best-new-cat-parent">intro to new cat parents</a> <br> <a href="https://figopetinsurance.com/blog/cat-ownership-101-guide-new-cat-parents">intro2 to new cat parents</a>'
+
+            } else if (score <= 6) {
+                img = './images/cat-2.png';
+                endText = 'You have some knowledges about raising a cat, but you still need to learn more.<br><a href="https://www.hillspet.com/cat-care/new-pet-parent/being-the-best-new-cat-parent">intro to new cat parents</a><br><a href="https://figopetinsurance.com/blog/cat-ownership-101-guide-new-cat-parents">intro2 to new cat parents</a>';
+            } else {
+                img = './images/cat-3.png';
+                endText = 'You did excellent on the test. You are ready to raise to a cat!';
+            }
+            document.querySelector('.end-text').innerHTML = endText;
+            document.querySelector('.end img').setAttribute('src', img);
+
+
+            document.querySelector('.back-btn').addEventListener('click', function() {
+                location.href = 'index.html';
+            });
+        }
+    </script>
+</body>
+</html>

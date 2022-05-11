@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care4Cats</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div id="app">
+        <header>
+            <div class="content">
+                <div class="logo">
+                    <img src="images/logo.png" />
+                    <h4>Care4Cats</h4>
+                </div>
+                <div class="userinfo">
+                    <button class="login-btn">LOGIN</button>
+                    <div class="login-info">
+                        <span>shuaipapa</span>
+                        <button class="logout-btn">LOGOUT</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="start">
+                <img src="images/cat.png" />
+                <p>Care4cats is a website dedicated to prospective first-time cat owners. Having a cat is more than owning something adorable and fluffy. It is a lifetime commitment that requires your companionship, care, and responsibility. Think of your cat as your best friend or your partner. </p>
+                <p>Today, more and more people are choosing cats as their first pets, believing that kitties are much more self-sufficient than other pets.</p>
+                <p>Indeed, they require less time and maintenance. Yet raising a cat and caring for it can be overwhelming for first-time owners who have zero experience with pets.</p>
+                <p>Before taking a cat home, ask yourself the following questions:</p>
+                <ul>
+                    <li>Do I really want a cat or am I simply looking for a pet?</li>
+                    <li>Am I ready to take responsibility for my cat’s well-being?</li>
+                    <li>Am I capable of providing a home for him/her and fulfilling his/her needs?</li>
+                </ul> 
+                <p>If the answers are “yes”, congratulations! Welcome to the community of cat owners. </p>
+                <p>But keep in mind that raising a cat is harder than you think and that there’s much more to learn about your cute little friend. As a first-time cat owner, I adopted Sushi (a two-month-old kitten) while knowing very little about how to properly care for him. I spent a long time researching and asking fellow cat owners for help.</p>
+                <p>Nonetheless, I panicked when Sushi was sick and couldn’t fall asleep just because he could not get used to his new home. This situation lasted for months until I was more experienced in dealing with contingencies and Sushi’s daily needs. Now, Sushi is one year old and living his best life. Yet I never ceased to learn more about him and his habits.</p>
+                <p>To avoid the same situation that happened to me, I developed the following 8-question test for potential cat owners in New York City. The questions feature very fundamental knowledge of cat care. They are the least you should know before taking a cat home. The purpose of this test is not only to measure the “eligibility” of first-time cat owners but also to provide insights into basic cat-raising.</p>
+                <p>To guarantee our kitties’ well-being and health, this test is advised for all new cat owners. </p>
+                <p>Click “Next” to initiate the test.</p>
+            </div>
+            <div class="qa-content">
+                <h3>
+                    <img src="images/cat.png" />
+                    <span>Can cats eat chocolate or raisins?</span>
+                </h3>
+                <ul class="answer-list">
+                    <li>
+                        <input id="yes" type="radio" name="value" value="yes" />
+                        <label for="yes">Yes</label>
+                    </li>
+                    <li>
+                        <input id="no" type="radio" name="value" value="no" />
+                        <label for="no">No</label>
+                    </li>
+                </ul>
+            </div>
+            <button class="next-btn">Next</button>
+        </main>
+    </div>
+
+    <div class="login-dialog">
+        <div class="dialog-content">
+            <h2>Login Care4Cats</h2>
+            <input placeholder="press your nickname" />
+            <div class="controls">
+                <button class="cancel-btn">Cancel</button>
+                <button class="submit-btn">Login</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script>
+        localStorage.removeItem('score');
+    </script>
+</body>
+</html>

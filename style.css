@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    background-color: #eeeeee;
+}
+header {
+    color: #fff;
+    background-color: #F6BBD7;
+    border-radius: 0 0 20px 20px;
+}
+
+.content {
+    justify-content: space-between;
+    height: 60px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.logo, .content {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+.content a {
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+}
+.userinfo button {
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+main {
+    width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto 0;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+main img {
+    width: 160px;
+}
+main p, ul {
+    text-align: left;
+    margin-bottom: 16px;
+}
+.start ul {
+    list-style: none;
+    padding-left: 20px;
+}
+main button  {
+    border: none;
+    padding: 12px 60px;
+    color: #000;
+    background-color: pink;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.qa-content {
+    text-align: left;
+}
+.qa-content img {
+    width: 60px;
+}
+.qa-content {
+    display: none;
+}
+.answer-list {
+    list-style: none;
+    padding-left: 10px;
+    font-size: 15px;
+    
+}
+.answer-list li {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.answer-list label {
+    cursor: pointer;
+    padding-left: 16px;
+}
+.answer-list input {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    background-color: #fff;
+    border: 1px solid #c9c9c9;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+.answer-list input:checked {
+    background: url('./images/check.png') no-repeat center center / cover;
+    background-color: pink;
+    border-color: pink;
+}
+.end-text {
+    line-height: 6;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login-dialog {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+}
+.dialog-content {
+    width: 360px;
+    /* height: 220px; */
+    margin: 200px auto 0;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.dialog-content h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.dialog-content input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px 16px;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.dialog-content input:focus {
+    border-color: pink;
+}
+.controls {
+    margin-top: 14px;
+}
+.controls button {
+    border: none;
+    padding: 10px 30px;
+    color: #000;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cancel-btn {
+    background-color: transparent;
+    margin-right: 20px;
+}
+.submit-btn {
+    background-color: pink;
+}
+.userinfo span {
+    display: inline-block;
+    margin-right: 16px;
+}
+.login-info {
+    display: none;
+}
